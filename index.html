@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html">
+	<meta charset="UTF-8">
+	<title>NES Game Genie Code Converter</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="convert.js"></script>
+</head>
+<body onload="initPage()">
+	<h1>NES Game Genie Code Converter</h1>
+	<table id="container">
+		<tbody>
+		<tr>
+		<td class="window" id="info_wnd">
+			<fieldset id="info_fs">
+			<legend>Info</legend>
+				<div id="nocenter">
+					<p>
+					<label>
+						<input type="radio" name="codetype" id="ct_6" onchange="setCodeType(this)" value="6d">
+						6-digit code
+					</label>
+					</p>
+					<p>
+					<label>
+						<input type="radio" name="codetype" id="ct_8" onchange="setCodeType(this)" value="8d">
+						8-digit code
+					</label>
+					</p>
+				</div>
+				<table>
+				<tbody>
+					<tr>
+						<th>Address:</th>
+						<td><input type="text" id="address"></td>
+					</tr>
+					<tr>
+						<th>Value:</th>
+						<td><input type="text" id="value"></td>
+					</tr>
+					<tr id="cmp_row">
+						<th>Compare:</th>
+						<td><input type="text" id="compare"></td>
+					</tr>
+				</tbody>
+				</table>
+			</fieldset>
+		</td>
+		<td class="window" id="cnv_wnd">
+			<button id="encode" onclick="clickEncode()">Encode --&gt;</button> <br/>
+			<p></p>
+			<button id="decode" onclick="clickDecode()">&lt;-- Decode</button>
+		</td>
+		<td class="window" id="code_wnd">
+			<fieldset id="code_fs">
+			<legend>Code</legend>
+				<div id="centerer">
+					<input type="text" id="code">
+				</div>
+			</fieldset>
+		</td>
+		</tr>
+		</tbody>
+	</table>
+</body>
+</html>

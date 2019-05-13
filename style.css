@@ -1,0 +1,53 @@
+h1 {
+	text-align: center;
+}
+
+fieldset {
+	display: block;
+}
+
+#container {
+	table-layout: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	height: 100%;
+}
+
+#nocenter {
+	text-align: left;
+}
+
+#cmp_row {
+	visibility: collapse;
+}
+
+#info_wnd {
+	width: 35%;
+}
+
+#info_wnd th {
+	font-weight: normal;
+	text-align: right;
+}
+
+#cnv_wnd {
+	width: 30%;
+}
+
+#code_wnd {
+	width: 35%;
+}
+
+#code_wnd fieldset {
+	position: relative;
+}
+
+#centerer {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
